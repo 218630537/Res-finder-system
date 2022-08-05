@@ -1,0 +1,103 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">  
+<head runat="server">  
+      
+    <link href="css/my.css" rel="MyStyleSheet" />  
+    <asp:ContentPlaceHolder ID="head" runat="server">  
+    </asp:ContentPlaceHolder>  
+
+    <title>CoolCode</title>  
+    <link rel="stylesheet" type="text/css" href="my.css"/>  
+    <link rel="stylesheet" type="text/css" href="MyStyleSheet.css"/>
+</head>  
+<body>  
+<header id="header">  
+<h1>ONLINE APPLICATION SYSTEM</h1>  
+</header>  
+    <form id="form1" runat="server">  
+      <asp:Panel ID="Panel1" runat="server">
+          <nav id="nav">  
+    <ul >  
+        <li ><a href="..\Common\home.aspx">Home</a></li>  
+         
+       
+     <li style="float: right">
+              <a href="../Student/Login.aspx""> <asp:Label ID="Logout" runat="server"  Text="Logout"></asp:Label></a>
+
+         </li>
+        <li style="float: right">
+              <a href="../Admin/Login.aspx"> <asp:Label ID="Label1" runat="server"  Text="AdminLogin"></asp:Label></a>
+
+         </li>
+        <li style="float: right">
+              <a href="../Common/About.aspx"> <asp:Label ID="About" runat="server"  Text="About"></asp:Label></a>
+
+         </li>
+        <li style="float: right">
+              <a href="../common/Contact.aspx"> <asp:Label ID="Contact" runat="server"  Text="Contact"></asp:Label></a>
+
+         </li>
+       
+
+        <li style="float: right">
+              <a href="../Student/ViewApplication.aspx"> <asp:Label ID="viewApp" runat="server"  Text="Applications"></asp:Label></a>
+
+         </li> 
+        
+        <li style="float: right">
+              <a href="../Student/apply.aspx"> <asp:Label ID="Apply" runat="server"  Text="Apply"></asp:Label></a>
+
+         </li> 
+         <li style="float: right">
+              <a href="../Student/Login.aspx"> <asp:Label ID="Login" runat="server"  Text="Login"></asp:Label></a>
+
+         </li>
+
+        
+        <li style="float: right">
+              <a href="../Student/Register.aspx"> <asp:Label ID="Register" runat="server"  Text="Register"></asp:Label></a>
+
+         </li> 
+        <%--<li style="float: right">
+              <a href="..\Common\home.aspx"> <asp:Label ID="usernam" runat="server"  Text="Label"></asp:Label></a>
+
+         </li> --%>
+
+       
+    </ul>  
+</nav>  
+          
+      </asp:Panel>
+        <br />
+<%--<aside id="side">  
+    <br />
+    <br />
+     
+    <a href="#"><p style="color: white; font-size: x-large;">Residents</p></a>  
+    <a href="#"><p style="color: white; font-size: x-large;">Apply </p></a> 
+    <a href="#"><p style="color: white; font-size: x-large;">Feedback </p></a>  
+      
+</aside>--%>
+  
+  
+    <div id="con">  
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">  
+          
+        </asp:ContentPlaceHolder>  
+    </div>  
+       
+        
+  
+  
+        <p>&nbsp; &nbsp;</p>
+<footer id="footer" >  
+    copyright @CoolCodes  
+</footer>  
+        </form>  
+</body>  
+</html>  
+      
+    

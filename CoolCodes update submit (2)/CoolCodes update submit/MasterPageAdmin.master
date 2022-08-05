@@ -1,0 +1,84 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPageAdmin.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">  
+<head runat="server">  
+      
+    <link href="css/my.css" rel="MyStyleSheet" />  
+    <asp:ContentPlaceHolder ID="head" runat="server">  
+    </asp:ContentPlaceHolder>  
+
+    <title>CoolCode</title>  
+    <link rel="stylesheet" type="text/css" href="my.css"/>  
+    <link rel="stylesheet" type="text/css" href="MyStyleSheet.css"/>
+</head>  
+<body>  
+<header id="header">  
+<h1>ONLINE APPLICATION SYSTEM </h1>
+    <p>&nbsp;</p>  
+</header>  
+    <form id="form1" runat="server">  
+      <asp:Panel ID="Panel1" runat="server">
+          <nav id="nav">  
+    <ul >  
+        <li ><a href="..\Common\home.aspx">Home</a></li>  
+         
+       
+     
+        <li style="float: right">
+              <a href="../Common/About.aspx"> <asp:Label ID="About" runat="server"  Text="About"></asp:Label></a>
+
+         </li>
+        <li style="float: right">
+              <a href="../Admin/addResident.aspx"> <asp:Label ID="Label1" runat="server" Width="132%"  Text="AddResidence"></asp:Label></a>
+
+         </li>
+        <li style="float: right">
+              <a href="../Admin/studentApplication.aspx"> <asp:Label ID="Label2" runat="server"  Text="Applications"></asp:Label></a>
+
+         </li>
+       <%-- <li style="float: right">
+              <a href="../common/Contact.aspx"> <asp:Label ID="Contact" runat="server"  Text="Contact"></asp:Label></a>
+
+         </li>--%>
+       
+
+       
+     
+
+       
+    </ul>  
+</nav>  
+          
+      </asp:Panel>
+        <br />
+<%--<aside id="side">  
+    <br />
+    <br />
+     
+    <a href="#"><p style="color: white; font-size: x-large;">Residents</p></a>  
+    <a href="#"><p style="color: white; font-size: x-large;">Apply </p></a> 
+    <a href="#"><p style="color: white; font-size: x-large;">Feedback </p></a>  
+      
+</aside>--%>
+  
+  
+    <div id="con">  
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">  
+          
+        </asp:ContentPlaceHolder>  
+    </div>  
+       
+        
+  
+  
+        <p>&nbsp; &nbsp;</p>
+<footer id="footer" >  
+    copyright @CoolCodes  
+</footer>  
+        </form>  
+</body>  
+</html>  
+      
+    
